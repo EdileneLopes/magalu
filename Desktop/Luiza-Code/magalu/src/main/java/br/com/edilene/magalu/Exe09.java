@@ -21,6 +21,8 @@ public class Exe09 {
 		
 		System.out.println("O reajuste foi de:" + aumento);
 		System.out.println("Então o salário passou a ser de :" + novoSalario);
+		
+		scan.close();
 	}
 
 }

@@ -1,23 +1,46 @@
 package br.com.edilene.magalu;
 
-public class Exe03 {
+	public class Exe03 {
 	
-	public void testar() {
-		System.out.println("-----Exercicio 03 -------");
-		int a = (4/2) + (2/4);
-		int b = 4/2 + 2/4;
-		
-		System.out.println(" Tem o mesmo resultado? " + a + " ----"+ b);
-		
-		
-		int c = 4/(2+2)/4;
-		int d = 4/2 + 2/4;
-		
-		System.out.println("E agora como são os resultados? "+ c + "----"+ d);
-		
-		int e = (4+2) * 2-4;
-		int f = 4+2 * 2-4;
-		
-		System.out.println("Comparando... "+ e +"----"+ f);
-    }
+		public void letraA(){
+			
+			System.out.println("-----Exercicio 03 -------");
+	        double result1;
+	        double result2;
+
+	        result1 = (4/2f)+(2/4f);
+	        result2 = 4/2f+2/4f;
+
+	        print("A",result1,result2);
+	    }
+
+	    public void letraB(){
+	        double result1;
+	        double result2;
+
+	        result1 = 4/(2+2)/4f;
+	        result2 = 4/2+2/4f;
+	        print("B",result1,result2);
+
+
+	    }
+
+	    public void letraC(){
+	        double result1;
+	        double result2;
+
+	        result1 = (4+2)*2-4f;
+	        result2 = 4+2*2-4f;
+	        print("C",result1,result2);
+
+
+	    }
+
+	    public void print(String letra, double resultado1, double resultado2){
+
+	        System.out.println("--------------LETRA "+letra+"--------------");
+	        System.out.println("Resultado de A valor1 :"+resultado1);
+	        System.out.println("Resultado de A valor2 :" +resultado2);
+
 }
+	}

@@ -19,7 +19,7 @@ public class Exe06 {
 		
 		System.out.println("A área do retangulo é:  " + area );
 		
-	
+		scan.close();
 }
 	
 }

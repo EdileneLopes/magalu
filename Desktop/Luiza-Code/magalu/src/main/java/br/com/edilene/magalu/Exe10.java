@@ -21,6 +21,8 @@ public class Exe10 {
 		System.out.println("Distribuidor:" + distribuidor);
 		System.out.println("Imposto: "+ imposto);
 		System.out.println("Valor total do veículo :" + valorVeiculo);
+		
+		scan.close();
 
 	}
 }

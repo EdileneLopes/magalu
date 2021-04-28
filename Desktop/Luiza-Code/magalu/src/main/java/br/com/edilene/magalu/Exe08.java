@@ -30,6 +30,7 @@ public class Exe08 {
 	System.out.println("O percentual de votos nulos é: "+ percentualVotosNulos + "%");
 	System.out.println("O percentual de votos válidos é: "+ percentualVotosValidos + "%");
 		
+	scan.close();
 		 
 } 
 }

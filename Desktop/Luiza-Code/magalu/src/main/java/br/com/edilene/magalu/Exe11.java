@@ -27,5 +27,6 @@ public class Exe11 {
 		System.out.println("Comissão total de vendas:" + comissaoVendas);
 		System.out.println("O salário total é de:" + novoSalario);
 		
+		scan.close();
 		}
 }

@@ -1,7 +1,16 @@
 package br.com.edilene.magalu;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+import livraria.Cliente;
+import livraria.Livraria;
+import livraria.Livros;
 
 @SpringBootApplication
 public class MagaluApplication {
@@ -9,33 +18,27 @@ public class MagaluApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MagaluApplication.class, args);
 		
-		Exe03 exe03 = new Exe03();
-		exe03.testar();
-		
-		Exe04 exe04 = new Exe04();
-		exe04.calcular();
-		
-		Exe05 exe05 = new Exe05();
-		exe05.escrever();
-		
-		Exe06 exe06 = new Exe06();
-		exe06.calcularArea();
-		
-		Exe07 exe07 = new Exe07();
-		exe07.calcularDias();
-		
-		Exe08 exe08 = new Exe08();
-		exe08.calcularPercentual();
-		
-		Exe09 exe09 = new Exe09();
-		exe09.calcularSalario();
-		
-		Exe10 exe10 = new Exe10();
-		exe10.precoCarro();
-		
-		Exe11 exe11 = new Exe11();
-		exe11.salarioFinal();
-			       
+					  			
+		 Livraria livraria = new Livraria();
+
+	        livraria.criarListaDeClientes();
+	        livraria.criarListaDelivros();
+
+	        Scanner scan = new Scanner(System.in);
+
+	        System.out.println("Olá, bem vindo a Livaria Casa");
+	        System.out.println("Você deseja ( 1 ) Alugar - ( 2 ) Devolver livro - ( 3 ) Trazer todos os não alugados");
+	        Integer escolha = scan.nextInt();
+
+	        if(escolha.equals(1)){
+	            livraria.validaClienteParaAlugar();
+	        }else if (escolha.equals(2)){
+	            livraria.devolverLivro();
+	        }else if (escolha.equals(3)){
+	            livraria.listarTodosNaoAlugados();
+	        } else{
+	            System.out.println("Opcao não disponivel");
+	        }
 	    }
-	}
+}
 

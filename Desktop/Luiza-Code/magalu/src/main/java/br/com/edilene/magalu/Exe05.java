@@ -13,6 +13,8 @@ public class Exe05 {
 		
 		System.out.println("Esse é o antecessor: " + (num-1));
 		
+		scan.close();
+		
 	}
 	
 }
